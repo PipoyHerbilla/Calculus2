@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finals</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: black;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin: 20px; 
+        }
+
+        .gallery-item {
+            box-sizing: border-box;
+            width: calc(30% - 20px); 
+            margin: 10px;
+            background: rgb(20, 20, 20);
+            padding: 20px;
+            border: 2px solid rgb(102, 255, 0);
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .file-box {
+            margin-top: 10px;
+        }
+
+        .file-box a {
+            text-decoration: none;
+            color: rgb(102, 255, 0);
+            background-color: rgb(30, 30, 30);
+            padding: 10px;
+            border: 1px solid rgb(102, 255, 0);
+            border-radius: 5px;
+            display: inline-block;
+        }
+
+        .file-box a:hover {
+            background-color: rgb(102, 255, 0);
+            color: black;
+        }
+
+        @media screen and (max-width: 767px) {
+            .gallery-item {
+                width: calc(80% - 20px);
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="gallery">
+    
+    <div class="gallery-item">
+        <h3>Week 1-4</h3>
+        <div class="file-box">
+            <a href="Math-121E_Calculus2-Week-1-4.ppt" download="presentation1.pptx">Download PPT</a>
+        </div>
+    </div>
+
+    <div class="gallery-item">
+        <h3>Week 5-6</h3>
+        <div class="file-box">
+            <a href="Math-121E_Calculus2Week-5-6 (1).pdf" download="report1.pdf">Download PPT</a>
+        </div>
+    </div>
+
+    <div class="gallery-item">
+        <h3>Week 7-8</h3>
+        <div class="file-box">
+            <a href="Math-121E_Calculus2Week-7-8.pdf" download="document1.docx">Download PPT</a>
+        </div>
+    </div>
+
+  
+
+</div>
+
+</body>
+</html>
